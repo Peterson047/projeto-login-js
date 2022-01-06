@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+    <div class="login-form">
+        <img src="./images/dws-investements.svg" alt="" id="logo">
+        <input type="email" id="email" class="formInput" placeholder="   Digite Seu Email">
+        <br>
+        <input type="password" id="token" class="formInput" placeholder="   Digite sua senha">
+        <br>
+        <input type="submit" value="Login" onclick="login()" class="submitButton">
+        <p id="alert">⠀</p>
+        <a id="forgotPassword" href="#">Esqueci minha senha</a>
+
+
+    </div>
+
+    <script>
+
+        var email = ''
+        var token = ''
+        function login() {
+            email = document.getElementById('email').value;
+            token = document.getElementById('token').value;
+
+            if (email == 'denissilva8720@gmail.com' && token == '1') {
+                window.location.href = "./home.html"
+
+            } else {
+                document.getElementById('alert').innerHTML = ("Senha ou email incorretos")
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
