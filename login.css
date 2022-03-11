@@ -28,7 +28,7 @@ body{
 }
 
 .formInput{
-    
+   box-sizing: border-box;
     height: 10vh;
     width: 50vh;
     margin-bottom: 10px;
